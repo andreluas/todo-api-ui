@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
 
   todos: Todo[] = []
   form: FormGroup = new FormGroup({
-    description : new FormControl('', [Validators.required, Validators.minLength(2)])
+    description : new FormControl('', [Validators.required, Validators.minLength(4)])
   })
 
   constructor(
